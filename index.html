@@ -18,14 +18,17 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/personal/favicon.ico">
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-  <script type="text/javascript" src="brython.js"></script>
-  <script type="text/python3">
-  	import requests
-	import bs4 
-	
-	if hasattr(getNews):
-		print(Hello World)
-   </script>
+  <script>
+	  var codeBlock = '<div class="content">' +
+                        '<h1>This is a heading</h1>' +
+                        '<p>This is a paragraph of text.</p>' +
+                        '<p><strong>Note:</strong> If you don\'t escape "quotes" properly, it will not work.</p>' +
+                    '</div>';
+    $(document).ready(function(){
+        // Inserting HTML code inside wrapper element
+        $(".wrapper").html(codeBlock);
+    });
+	</script>
 
   
   
@@ -95,8 +98,7 @@
 		<div class="content">
 			<div class="container container-center">
 				<div class="row">
-					<getNews>
-					</getNews>
+					
 				
 					
 <!-- Bottom of Column -->		

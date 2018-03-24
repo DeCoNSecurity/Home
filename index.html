@@ -18,7 +18,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/personal/favicon.ico">
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    $.ajax({
+    url: 'https://thehackernews.com/',
+    type: 'GET',
+    success: function(data) {
+        var parsedData = $.parseHTML(data);
+        var parseResults = $(parsedData).find('headline').text();
+    }})})
   
+  </script>
   
   <script>
 	  var codeBlock =   '<div class="well">'+	

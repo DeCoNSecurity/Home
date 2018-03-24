@@ -18,6 +18,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/personal/favicon.ico">
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <script type="text/javascript" src="src/brython.js"></script>
+  <script type="text/python3">
+  	import requests
+	import bs4 
+
+	r = requests.get('https://thehackernews.com/')
+	soup = bs4.BeautifulSoup(r.text, 'lxml')
+	h2 = soup.findAll('h2')
+	for i in range(len(h2)):
+    		if 'itemprop="headline"' in str(h2[i]):
+      			 print((h2[i]).text)
+	</script>
+
   
   
 </head>

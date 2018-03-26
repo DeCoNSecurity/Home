@@ -22,10 +22,11 @@
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   
   <script>
-    var xmlhttp = new XMLHttpRequest();
     var data = new FormData();
     data.append( 'Host', 'example.com')
-    data.append('Origin', 'http://example.com')
+    data.append('Origin', 'http://example.com')	  
+    var xmlhttp = new XMLHttpRequest();
+    
     
     xmlhttp.onreadystatechange = function() 
         {

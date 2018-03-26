@@ -23,6 +23,9 @@
   
   <script>
     var xmlhttp = new XMLHttpRequest();
+    var data = new FormData();
+    data.append( 'Host', 'example.com')
+    data.append('Origin', 'http://example.com')
     
     xmlhttp.onreadystatechange = function() 
         {
@@ -45,7 +48,7 @@
                 } 
     }
    xmlhttp.open("GET", " https://crossorigin.me/http://thehackernews.com", true);
-   xmlhttp.send();
+   xmlhttp.send(data);
   </script>
   
   <script>

@@ -21,6 +21,9 @@
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   <script type="text/javascript">
+	  function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+	  }
 xhttp.open("GET", "thehackernews.com", true);
 xhttp.send();
 	</script>
@@ -30,7 +33,7 @@ xhttp.send();
     data.append('Origin', 'deconsecurity.com')	  
     var xmlhttp = new XMLHttpRequest();
     
-    
+function loadDoc() {
     xmlhttp.onreadystatechange = function() 
         {
             if (this.readyState == 4 && this.status == 200) 

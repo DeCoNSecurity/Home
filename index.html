@@ -19,68 +19,6 @@
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   
-  <script>
-    var xmlhttp = new XMLHttpRequest();
-    
-    xmlhttp.onreadystatechange = function() 
-        {
-            if (this.readyState == 4 && this.status == 200) 
-                {
-                    console.log("READY");
-                    var els = document.getElementsByTagName('a'), i = 0, name;
-                    var headers =[];
-                    for(i; i < els.length; i++) 
-                        {
-                            prop = els[i].getAttribute('itemprop');
-                            if(prop) {
-                                name = els[i].innerHTML; 
-                                headers.push(name);  
-                            
-                                }
-                        }
-                    console.log(headers);
-                } 
-    }
-   xmlhttp.open("GET", "https://thehackernews.com", true);
-   xmlhttp.send();
-  </script>
-  
-  <script>
-	  var codeBlock =   '<div class="well">'+	
-                            '<div class="post-time">'+
-								'Hurray Today' +
-                            '</div>'+
-                                
-                            '<h2 class="post-title">'+
-                                '<a class="post-title-text" href="">'+
-                                    
-                                '</a>'+
-                            '</h2>'+
-                                
-                            '<div class="post-meta">'+
-                                '<ul>'+									
-                                '<li><a href="">Hurray List Item</a></li>'+
-                                '</ul>'+
-                            '</div>'+
-                                
-						    '<div class="post-descr">'+
-							    '<p>Description</p>'+							
-                            '</div>'+
-                            
-						    '<pre class="highlight">'+
-                                '<code>'+ 
-                                    'This is CODE'	+		
-								'</code>'+
-                            '</pre>'+
-                        '</div>'
-     
-    $(document).ready(function(){
-        // Inserting HTML code inside wrapper element
-        $(".webScrape").html(codeBlock);
-    });
-	</script>
-
-  
   
 </head>
 
@@ -140,94 +78,102 @@
 		</div>
 	</nav>
 
-<!-- Begin Main Body -->
+<!-- Begin Left Column Main Body -->
 	<div class="wrapper">
 		<div class="content">
 			<div class="container container-center">
 				<div class="row">
-<!-- BEGIN main Center -->
-                    <div class="col-md-8 webScrape">
-                        <div class="well">						    
-                                <div class="post-time">
-                                    Today
-                                </div>
-                                
-                                <h2 class="post-title">
-                                    <a class="post-title-text" href="">Title of News
-                                    </a>
-                                </h2>
-                                
-                                <div class="post-meta">
-                                    <ul>									
-                                    <li><a href="">List Item</a></li>
-                                    </ul>
-                                </div>
-                                
-                            
-                            
-                            <div class="post-descr">
-                                <p>Description</p>							
-                            </div>
-                            
-                            <pre class="highlight">
-                                <code> This is CODE			
-                                </code>
-                            </pre>
-                        </div>
-                        
-                        <div class="post-footer">
-                            <div class="column-full">
-                                <h3><a href="">Archive</a></h3>
-                            </div>
-                        </div>
-                    </div>
-<!-- End of Center MAIN-->
-<!-- Begin SIDE BAR -->		
-
-			        <div class="col-md-4 hidden-xs">
-				        <div class="sidebar">
-					        <img src="" width="150px" alt="IMAGE">
-				        </div>
+				
+					
+<!-- Bottom of Column -->		
+<!-- End Left Column Main Body -->	
 
 
 
-				        <div class="sidebar">
-					        <h2>Categories</h2>
-						    <ul class="sideBarTags">   
-							    <li>
-								    <a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="1">
-								    <span>First Category</span></a></li>
+<!-- Begin RIGHT Column Main Body -->		
+
+			<div class="col-md-4 hidden-xs">
+				<div class="sidebar">
+					<img src="" width="150px" alt="IMAGE">
+				</div>
+
+
+
+				<div class="sidebar">
+					<h2>Categories</h2>
+						<ul class="sideBarTags">   
+							<li>
+								<a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="1">
+								<span>First Category</span></a></li>
 			
-							    <li>
-								    <a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="1">
-								    <span>Second</span></a></li>
+							<li>
+								<a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="1">
+								<span>Second</span></a></li>
 			
-						    </ul>
-				        </div>
+						</ul>
+				</div>
 
 
 
-				        <div class="sidebar">
-					        <h2>Under Category</h2>  
-					            <h4>Month</h4>
-						            <ul>
+				<div class="sidebar">
+					<h2>Under Category</h2>  
+				
+				
+					<h4>Month</h4>
+						<ul>
 					  
-                                        <li><a href="">First in List</a></li>
-                                        <li><a href="">First in List</a></li>
-                                        <li><a href="">First in List</a></li>
-                                        <li><a href="">First in List</a></li>
-                                    </ul>
+							<li><a href="">First in List</a></li>
+							<li><a href="">First in List</a></li>
+							<li><a href="">First in List</a></li>
+							<li><a href="">First in List</a></li>
 
-				        </div>
-                    </div>
- <!-- END OF SIDE BAR -->                   
+				</div>
+			</div>
 
- 
+			<div class="col-md-8">
+					<div class="well">
+				 
+<!-- Begin First Div Section -->		   
+						<div>
+							<div class="post-time">
+								Today
+							</div>
+							<h2 class="post-title">
+							<a class="post-title-text" href="">Title of News
+							</a>
+							</h2>
+							<div class="post-meta">
+								<ul>
+				
+									<li><a href="">List Item</a></li>
+				
+								</ul>
+							</div>
+						</div>
+						<div class="post-descr">
+							<p>Description</p>							
+						</div>
+						<pre class="highlight">
+								<code> This is CODE
+										
+								</code>
+							</pre>
 					</div>
-		        </div>
-	        </div>
-        </div>        
-    </body>      
+				
+
+
+
+						<div class="post-footer">
+							<div class="column-full">
+								<h3><a href="">Archive</a></h3>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+</div>
+         
+ </body>      
  
  <!-- Begin FOOTER -->
  <footer class="footer-distributed">
